@@ -1,7 +1,210 @@
+# =========================
+# Python cache
+# =========================
 __pycache__/
-*.pyc
-.env
-.venv/
-dist/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# =========================
+# Python build / package files
+# =========================
 build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+conda-env/
+.python-version
+
+# =========================
+# Environment variables / secrets
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =========================
+# IDE / editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+log/
+
+# =========================
+# Deep learning datasets
+# =========================
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+external_data/
+
+# Keep empty data directories if needed
+!data/.gitkeep
+!dataset/.gitkeep
+!datasets/.gitkeep
+
+# =========================
+# Model checkpoints / weights
+# =========================
+checkpoints/
+checkpoint/
+ckpt/
+weights/
+models/
+saved_models/
+
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.tflite
+*.safetensors
+
+# =========================
+# Training outputs / experiment results
+# =========================
+runs/
+outputs/
+output/
+results/
+experiments/
+exp/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+
+# =========================
+# Generated media / predictions
+# =========================
+predictions/
+inference_outputs/
+samples/
+generated/
+figures/
+
+# Optional: ignore common generated media files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.mp4
+*.avi
+*.mov
+
+# Keep important documentation images if needed
+!docs/**/*.png
+!docs/**/*.jpg
+!README.assets/**
+
+# =========================
+# Large compressed files
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# =========================
+# NumPy / array / serialized data
+# =========================
+*.npy
+*.npz
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.jsonl
+
+# =========================
+# Cache directories
+# =========================
+.cache/
+.cache*/
+torch_cache/
+huggingface/
+.huggingface/
+transformers_cache/
+
+# =========================
+# PyTorch / TensorFlow specific
+# =========================
+*.pbtxt
+events.out.tfevents.*
+
+# =========================
+# CUDA / compiled extensions
+# =========================
+*.so
+*.dll
+*.dylib
+*.o
+*.a
+*.cu.o
+*.cubin
+
+# =========================
+# Test / coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
